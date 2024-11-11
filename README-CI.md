@@ -86,6 +86,17 @@ This will ask for your DockerHub username and password. Once logged in, you can 
    ```plaintet
    docker push your-dockerhub-username/yourlastname-ceg3120:latest
 
+![Docker_image_code](https://github.com/user-attachments/assets/9774996c-097c-4394-a452-9990a75e206e)
+![app_running_code](https://github.com/user-attachments/assets/9e5775fa-31e3-4258-822c-af21e526ec80)
+![app_running](https://github.com/user-attachments/assets/b7fcf7b0-6f07-4af2-aea5-220ced191b41)
+![docker_code](https://github.com/user-attachments/assets/4314a201-e198-4408-a452-b0032611ad58)
+![Docker_push_code](https://github.com/user-attachments/assets/86b3f8b2-9509-4e42-a5ff-e55edd5bc8b0)
+![Docker_tag](https://github.com/user-attachments/assets/2ef1ed9e-0c98-47e2-9da0-3a9b116d589e)
+
+
+
+
+
 ## Link to DockerHub Repository
 You can find the Docker image for this project on DockerHub at the following link: 
 https://hub.docker.com/repository/docker/suhayb02/al-ramahi-ceg3120/general
