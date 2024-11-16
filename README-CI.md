@@ -102,3 +102,102 @@ You can find the Docker image for this project on DockerHub at the following lin
 https://hub.docker.com/repository/docker/suhayb02/al-ramahi-ceg3120/general
 
 
+# CI/CD with GitHub Actions and DockerHub
+In this part, we automate the creation of a Docker image and push it to DockerHub in this section using GitHub Actions.
+
+## Configuring GitHub Secrets
+
+You must create a DockerHub Access Token in order to securely communicate with DockerHub through GitHub Actions. Pushing and pulling Docker images will be authenticated using this token.
+GitHub Secrets are used to store private data, such as your access token and DockerHub username. Your GitHub Actions workflow then safely references these secrets.
+
+1. How to Set a Secret for Use by GitHub Actions
+
+   - Go to your DockerHub account.
+   - Click on your profile picture in the top-right corner and select Account Settings.
+   - Under Security, find the Access Tokens section and click Create Token.
+   - Provide a name for the token
+   - Click Generate, then copy the generated token and save it securely.
+
+2. Set GitHub Secrets
+   - Go to your GitHub repository.
+   - Click on Settings and scroll down to Secrets and variables, then select Actions.
+   - Click New repository secret to add a new secret.
+       - DOCKER_USERNAME: Your DockerHub username 
+       - DOCKER_TOKEN: The access token that you created in DockerHub.
+
+## Behavior of the GitHub Workflow
+### Summary of Workflow Actions
+The GitHub Actions workflow is set up to:
+
+1. Build the Docker image using the Dockerfile in the repository.
+2. Tag the image with the latest commit.
+3. Push the Docker image to DockerHub automatically.
+
+This set-up provides that a new Docker image is produced and updated on DockerHub every time code is pushed to the repository.
+
+### Link to the Workflow File
+/////////////////////////
+
+### Setting Up the GitHub Actions Workflow
+Here’s a breakdown of how I set up the GitHub Actions workflow. I created a YAML file docker-image.yml in .github/workflows/ with the following configuration:
+
+     ```plaintext
+    name: Build and Push Docker Image
+    
+    on:
+      push:
+        branches:
+          - main
+      pull_request:
+        branches:
+          - main
+    
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+    
+        steps:
+          # Checkout the repository code
+          - name: Checkout repository
+            uses: actions/checkout@v3
+    
+          # Cache Docker layers to speed up builds
+          - name: Cache Docker layers
+            uses: actions/cache@v3
+            with:
+              path: /tmp/.buildx-cache
+              key: ${{ runner.os }}-buildx-${{ github.sha }}
+              restore-keys: |
+                ${{ runner.os }}-buildx-
+          # Log in to DockerHub using credentials from GitHub Secrets
+          - name: Log in to DockerHub
+            uses: docker/login-action@v3
+            with:
+              username: ${{ secrets.DOCKER_USERNAME }}
+              password: ${{ secrets.DOCKER_TOKEN }}
+    
+          # Build the Docker image from the specific Dockerfile path
+          - name: Build Docker image
+            run: |
+              docker build -f angular-site/wsu-hw-ng-main/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/suhayb:latest angular-site/wsu-hw-ng-main
+          # Push the Docker image to DockerHub
+          - name: Push Docker image
+            run: |
+              docker push ${{ secrets.DOCKER_USERNAME }}/suhayb:latest
+
+### Configuring to Duplicate the Workflow
+
+If another user wants to use this workflow, they would need to:
+
+1. Update the DockerHub repository name (replace yourlastname-ceg3120 with their repository name in the tags field).
+2. Set up their own GitHub Secrets with the following names:
+   - DOCKER_USERNAME: Their DockerHub username.
+   - DOCKER_TOKEN: Their DockerHub Access Token with Read/Write access.
+
+## Resources
+1. Docker Documentation: CICD with GitHub Actions
+2. GitHub Actions - build-push-action Documentation
+3. GitHub Docs - Publishing Docker Images to DockerHub
+   
+
+
