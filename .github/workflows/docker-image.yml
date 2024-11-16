@@ -36,7 +36,7 @@ jobs:
       # Build the Docker image from the specific Dockerfile path
       - name: Build Docker image
         run: |
-          docker build --no-cache -f angular-site/wsu-hw-ng-main/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/suhayb:latest .
+          docker build -f angular-site/wsu-hw-ng-main/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/suhayb:latest .
 
       # Push the Docker image to DockerHub
       - name: Push Docker image
