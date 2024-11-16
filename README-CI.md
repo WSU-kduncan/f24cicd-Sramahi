@@ -136,7 +136,7 @@ The GitHub Actions workflow is set up to:
 This set-up provides that a new Docker image is produced and updated on DockerHub every time code is pushed to the repository.
 
 ### Link to the Workflow File
-/////////////////////////
+https://github.com/WSU-kduncan/f24cicd-Sramahi/tree/main/.github/workflows
 
 ### Setting Up the GitHub Actions Workflow
 Here’s a breakdown of how I set up the GitHub Actions workflow. I created a YAML file docker-image.yml in .github/workflows/ with the following configuration:
@@ -193,6 +193,10 @@ If another user wants to use this workflow, they would need to:
 2. Set up their own GitHub Secrets with the following names:
    - DOCKER_USERNAME: Their DockerHub username.
    - DOCKER_TOKEN: Their DockerHub Access Token with Read/Write access.
+
+![Verify(part2)](https://github.com/user-attachments/assets/049c7bc6-dabc-4e5c-acf3-2d538fb6c2aa)
+![app_running](https://github.com/user-attachments/assets/6bfc9c4d-3dd3-4e55-8474-eda675b7a59d)
+
 
 ## Resources
 1. Docker Documentation: CICD with GitHub Actions
