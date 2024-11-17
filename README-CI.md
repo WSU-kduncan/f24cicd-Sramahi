@@ -6,8 +6,6 @@ In this project, I used Docker to containerize an Angular application and config
 - **GitHub Actions**: Used to automate the CI/CD pipeline for the project.
 - **DockerHub**: Used to store and share the container image.
 
-This project helps in learning how to manage apps using containers and run them in isolated contexts.
-
 ## Containerizing Your Application
 
 ### How to Install Docker
