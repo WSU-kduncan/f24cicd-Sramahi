@@ -204,4 +204,11 @@ If another user wants to use this workflow, they would need to:
 3. GitHub Docs - Publishing Docker Images to DockerHub
    
 
+# Diagram
+![Diagram](https://github.com/user-attachments/assets/2ebd246e-54bd-47a3-a971-2764339cff66)
+
+This diagram was built using Mermaid.
+
+
+    
 
