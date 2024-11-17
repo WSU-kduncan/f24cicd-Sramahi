@@ -96,7 +96,7 @@ This will ask for your DockerHub username and password. Once logged in, you can 
 
 
 ## Link to DockerHub Repository
-You can find the Docker image for this project on DockerHub at the following link: 
+You can find the DockerHub at the following link: 
 https://hub.docker.com/repository/docker/suhayb02/al-ramahi-ceg3120/general
 
 
