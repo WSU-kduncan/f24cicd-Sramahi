@@ -200,7 +200,10 @@ If another user wants to use this workflow, they would need to:
 1. Docker Documentation: CICD with GitHub Actions
 2. GitHub Actions - build-push-action Documentation
 3. GitHub Docs - Publishing Docker Images to DockerHub
-   
+4. Mermaid - new markdown feature
+5. Dockerfile Reference
+6. Using secrets in GitHub Actions
+7. Build and push your first image
 
 # Diagram
 ![Diagram](https://github.com/user-attachments/assets/2ebd246e-54bd-47a3-a971-2764339cff66)
