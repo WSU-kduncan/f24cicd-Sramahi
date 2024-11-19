@@ -197,13 +197,15 @@ If another user wants to use this workflow, they would need to:
 
 
 ## Resources
-1. Docker Documentation: CICD with GitHub Actions
-2. GitHub Actions - build-push-action Documentation
-3. GitHub Docs - Publishing Docker Images to DockerHub
-4. Mermaid - new markdown feature
-5. Dockerfile Reference
-6. Using secrets in GitHub Actions
-7. Build and push your first image
+## Resources
+
+1. [Docker Documentation: CICD with GitHub Actions](https://docs.docker.com/build/ci/github-actions/)
+2. [GitHub Actions - build-push-action Documentation](https://github.com/marketplace/actions/build-and-push-docker-images)
+3. [GitHub Docs - Publishing Docker Images to DockerHub](https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images#publishing-images-to-docker-hub)
+4. [Mermaid - new markdown feature](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/)
+5. [Dockerfile Reference](https://docs.docker.com/reference/dockerfile/)
+6. [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
+7. [Build and push your first image](https://docs.docker.com/get-started/introduction/build-and-push-first-image/)
 
 # Diagram
 ![Diagram](https://github.com/user-attachments/assets/2ebd246e-54bd-47a3-a971-2764339cff66)
