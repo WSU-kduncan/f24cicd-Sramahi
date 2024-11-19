@@ -195,17 +195,18 @@ If another user wants to use this workflow, they would need to:
 ![Verify(part2)](https://github.com/user-attachments/assets/049c7bc6-dabc-4e5c-acf3-2d538fb6c2aa)
 ![app_running](https://github.com/user-attachments/assets/6bfc9c4d-3dd3-4e55-8474-eda675b7a59d)
 
-
-## Resources
 ## Resources
 
-1. [Docker Documentation: CICD with GitHub Actions](https://docs.docker.com/build/ci/github-actions/)
-2. [GitHub Actions - build-push-action Documentation](https://github.com/marketplace/actions/build-and-push-docker-images)
-3. [GitHub Docs - Publishing Docker Images to DockerHub](https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images#publishing-images-to-docker-hub)
-4. [Mermaid - new markdown feature](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/)
-5. [Dockerfile Reference](https://docs.docker.com/reference/dockerfile/)
-6. [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
-7. [Build and push your first image](https://docs.docker.com/get-started/introduction/build-and-push-first-image/)
+1. [Docker Documentation: CICD with GitHub Actions](https://docs.docker.com/build/ci/github-actions/) - For integrating Docker with GitHub Actions in CI/CD pipelines.
+2. [GitHub Actions - build-push-action Documentation](https://github.com/marketplace/actions/build-and-push-docker-images) - Guide for configuring workflows to build and push Docker images.
+3. [GitHub Docs - Publishing Docker Images to DockerHub](https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images#publishing-images-to-docker-hub) - Instructions for publishing Docker images from GitHub Actions to DockerHub.
+4. [Mermaid - new markdown feature](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/) - For adding diagrams in GitHub markdown files to visualize workflows.
+5. [Dockerfile Reference](https://docs.docker.com/reference/dockerfile/) - Reference for writing Dockerfiles to build container images.
+6. [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) - Guide for securely using secrets (e.g., DockerHub tokens) in GitHub Actions.
+7. [Build and push your first image](https://docs.docker.com/get-started/introduction/build-and-push-first-image/) - For understanding how to build and push Docker images to a registry.
+
+
+
 
 # Diagram
 ![Diagram](https://github.com/user-attachments/assets/2ebd246e-54bd-47a3-a971-2764339cff66)
