@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
-            # Generate Docker image metadata for tagging
+      # Generate Docker image metadata for tagging
       - name: Docker metadata
         id: meta
         uses: docker/metadata-action@v4
@@ -44,12 +44,12 @@ jobs:
             type=semver,pattern={{major}}
             latest
 
-
       # Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -f angular-site/wsu-hw-ng-main/Dockerfile \
-            -t ${{ steps.meta.outputs.tags }} angular-site/wsu-hw-ng-main
+          docker buildx build -f angular-site/wsu-hw-ng-main/Dockerfile \
+            -t ${{ secrets.DOCKER_USERNAME }}/suhayb:${{ github.ref_name }} \
+            angular-site/wsu-hw-ng-main
 
       # Push the Docker image to DockerHub with all generated tags
       - name: Push Docker image
