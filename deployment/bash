@@ -1,0 +1,6 @@
+#!/bin/bash
+docker login
+docker pull suhayb02/suhayb:v1.0.0
+docker stop app || true
+docker rm app || true
+docker run --name app -d -p 80:4200 suhayb02/suhayb:v1.0.0
