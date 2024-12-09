@@ -195,3 +195,19 @@ WantedBy=multi-user.target
 ![Screenshot 2024-12-08 185421](https://github.com/user-attachments/assets/9bdab8d8-5f95-4838-928b-e78bf4a1b050)
 ![Screenshot 2024-12-08 194819](https://github.com/user-attachments/assets/2ef4bc7e-dbdf-4afe-b0ed-902ca17dfeee)
 
+## Diagramming
+
+## Resources
+## Resources
+
+1. [Adnanh's Webhook Documentation](https://github.com/adnanh/webhook) - Official repository and documentation for setting up and using the webhook listener.
+2. [Using GitHub Actions and Webhooks](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) - Comprehensive guide to using GitHub webhooks to trigger workflows and actions.
+3. [Using DockerHub and Webhooks](https://docs.docker.com/docker-hub/webhooks/) - Learn how to set up DockerHub webhooks to trigger updates or deployments.
+4. [Linux Handbook - How to Create a systemd Service](https://linuxhandbook.com/systemd-service/) - Step-by-step guide to creating and managing `systemd` services in Linux.
+5. [GitHub - docker/metadata-action](https://github.com/docker/metadata-action) - Official GitHub action for managing Docker metadata, such as tagging images.
+6. [Docker - Manage Tag Labels](https://docs.docker.com/engine/reference/commandline/tag/) - Docker documentation on managing image tags and labels for better organization.
+7. [Docker Container Best Practices](https://docs.docker.com/develop/dev-best-practices/) - Best practices for creating, managing, and deploying Docker containers.
+8. [Systemd Journal Logs](https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html) - Documentation on how to monitor and interpret `systemd` logs effectively.
+9. [GitHub Webhooks Overview](https://docs.github.com/en/webhooks) - Understand GitHub webhooks, their payloads, and how to configure them.
+10. [DockerHub Image Tags and Webhook Examples](https://collabnix.com/dockerhub-webhooks-with-practical-examples/) - An illustrative guide on using DockerHub webhooks in real-world scenarios.
+
