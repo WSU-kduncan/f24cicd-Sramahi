@@ -1,0 +1,7 @@
+[
+  {
+    "id": "deploy-hook",
+    "execute-command": "/home/ec2-user/deploy.sh",
+    "command-working-directory": "/home/ec2-user/"
+  }
+]
