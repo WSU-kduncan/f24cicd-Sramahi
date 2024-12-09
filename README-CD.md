@@ -195,10 +195,8 @@ WantedBy=multi-user.target
 ![Screenshot 2024-12-08 185421](https://github.com/user-attachments/assets/9bdab8d8-5f95-4838-928b-e78bf4a1b050)
 ![Screenshot 2024-12-08 194819](https://github.com/user-attachments/assets/2ef4bc7e-dbdf-4afe-b0ed-902ca17dfeee)
 
-## Diagramming
+## Diagrams
 
-## Resources
-## Resources
 
 ## Resources
 
