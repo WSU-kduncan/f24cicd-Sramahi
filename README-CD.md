@@ -58,3 +58,35 @@ Once the workflow is triggered, it goes through the following steps:
 
 ## Link to DockerHub Repository
 [DockerHub - Suhayb's Repository](https://hub.docker.com/repository/docker/suhayb02/suhayb/general)
+
+
+## Instance Information
+
+- **Public IP**: `98.84.157.114`
+- **OS**: Amazon Linux 2
+
+## How to Install Docker on the Instance
+
+### Step 1: Install Docker
+On your EC2 instance, run the following commands to install Docker (for Amazon Linux 2):
+   - sudo yum update -y
+   - sudo yum install docker -y
+ 
+### Step 2: Start Docker Service
+Start Docker and enable it to start on boot:
+   - sudo systemctl start docker
+   - sudo systemctl enable docker
+
+### Step 3: Verify Docker Installation
+To check if Docker is installed and running, run: 
+   - docker --version
+
+## Bash Script
+
+1. Purpose: The bash script is responsible for pulling the latest Docker image from your DockerHub repository, stopping and removing the old container, and starting a new container with the updated image.
+2. Script Taskings:
+     - Pull the latest Docker image from your DockerHub repository.
+     - Stop and remove any running containers based on the current image.
+     - Start a new container with the freshly pulled image.
+3. Location on Instance Filesystem: The bash script is located in the nano /home/ec2-user/deploy.sh
+4. link: https://github.com/WSU-kduncan/f24cicd-Sramahi/blob/main/deployment/bash
