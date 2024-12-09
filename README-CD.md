@@ -212,7 +212,5 @@ WantedBy=multi-user.target
 8. [Automated Deployment Using Docker, GitHub Actions, and Webhooks](https://levelup.gitconnected.com/automated-deployment-using-docker-github-actions-and-webhooks-54018fc12e32) - Step-by-step tutorial on setting up automated deployments with Docker and webhooks.
 9. [Building Your First CI/CD Pipeline with Docker, GitHub Actions, and Webhooks](https://blog.devgenius.io/build-your-first-ci-cd-pipeline-using-docker-github-actions-and-webhooks-while-creating-your-own-da783110e151) - A guide to creating a full CI/CD pipeline while integrating Docker and GitHub.
 10. [Linux Handbook - How to Create a systemd Service](https://linuxhandbook.com/create-systemd-services/) - Step-by-step guide to creating and managing `systemd` services in Linux.
-11. [Systemd Journal Logs](https://www.freedesktop.org/software/systemd/man/systemd.journal-fields.html) - Documentation on how to monitor and interpret `systemd` logs effectively.
-12. [DockerHub Image Tags and Webhook Examples](https://collabnix.com/dockerhub-webhooks-with-practical-examples/) - An illustrative guide on using DockerHub webhooks in real-world scenarios.
 
 
