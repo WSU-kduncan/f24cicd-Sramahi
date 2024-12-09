@@ -1,0 +1,13 @@
+[Unit]
+Description=Webhook listener
+After=network.target
+
+[Service]
+User=ec2-user
+ExecStart=/home/ec2-user/go/bin/webhook -hooks /home/ec2-user/hooks.json -verbose
+Restart=always
+WorkingDirectory=/home/ec2-user
+Environment=PATH=/home/ec2-user/go/bin:$PATH
+
+[Install]
+WantedBy=multi-user.target
