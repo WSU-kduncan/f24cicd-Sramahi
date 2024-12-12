@@ -179,6 +179,15 @@ WantedBy=multi-user.target
 3. Port Conflicts: If you see errors like "address already in use", check if the port (9000) is already in use by another process:
       - sudo lsof -i :9000
 4. Webhook Not Triggering: Ensure the webhook secret matches between the GitHub/DockerHub configuration and the hooks.json file.
+5. When running the following Docker command:
+      - docker run --name app -d -p 80:4200 suhayb02/suhayb:v1.0.0
+   you may encounter this:
+      - docker: Error response from daemon: Conflict. The container name "/app" is already in use by container "43bf756701a94e09bda6894364e63f18ca9f17944a3b67440170d245d9dc06ff". You have to remove (or rename) that container to be able to reuse that name.
+
+To resolve this:
+   - Stop the existing container: docker stop app
+   - Remove the existing container: docker rm app
+   - Run the docker run command again: docker run --name app -d -p 80:4200 suhayb02/suhayb:v1.0.0
 
 ## Images
 
