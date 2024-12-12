@@ -196,6 +196,11 @@ WantedBy=multi-user.target
 ![Screenshot 2024-12-08 194819](https://github.com/user-attachments/assets/2ef4bc7e-dbdf-4afe-b0ed-902ca17dfeee)
 
 ## Diagrams
+![Screenshot 2024-12-11 190638](https://github.com/user-attachments/assets/55f6c74f-e966-4d9c-befa-3878c9ed3a19)
+
+![Screenshot 2024-12-11 190700](https://github.com/user-attachments/assets/84f3d8a8-ab70-446e-867c-24f22b9e0e85)
+
+![Screenshot 2024-12-11 190740](https://github.com/user-attachments/assets/1a35b024-9ee7-4b87-846a-dbabea9bf8af)
 
 
 ## Resources
@@ -210,5 +215,7 @@ WantedBy=multi-user.target
 8. [Automated Deployment Using Docker, GitHub Actions, and Webhooks](https://levelup.gitconnected.com/automated-deployment-using-docker-github-actions-and-webhooks-54018fc12e32) - Step-by-step tutorial on setting up automated deployments with Docker and webhooks.
 9. [Building Your First CI/CD Pipeline with Docker, GitHub Actions, and Webhooks](https://blog.devgenius.io/build-your-first-ci-cd-pipeline-using-docker-github-actions-and-webhooks-while-creating-your-own-da783110e151) - A guide to creating a full CI/CD pipeline while integrating Docker and GitHub.
 10. [Linux Handbook - How to Create a systemd Service](https://linuxhandbook.com/create-systemd-services/) - Step-by-step guide to creating and managing `systemd` services in Linux.
+11. The diagrams were built using Mermaid.
+
 
 
